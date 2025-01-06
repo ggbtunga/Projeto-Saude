@@ -1,0 +1,130 @@
+/* Estilização global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.navbar ul li a.active {
+    text-decoration: none;
+    color: darkorange;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #FF8400FF;
+}
+
+.content {
+    flex: 1;
+}
+
+.image-section {
+    height: 100vh;
+    background-image: url('../assets/fundo.png'); /* Caminho da imagem local */
+    background-size: cover; /* Garante que a imagem cubra toda a seção */
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    padding-top: 20px; /* Espaço entre o topo da seção e o título */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
+    justify-content: flex-start; /* Posiciona o conteúdo no início da seção */
+    font-size: larger;
+}
+
+.article{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+
+}
+.article img{
+    width: 280px;
+    height: 190px;
+}
+
+.imc{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #FF8400FF;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 3px 8px rgba(0, 0, 0, 0.8);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Footer sticky */
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
