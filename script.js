@@ -1,3 +1,18 @@
+// Exibir o popup ao carregar a página
+window.addEventListener("load", function () {
+    const popup = document.getElementById("popup");
+    const closeButton = document.getElementById("closePopup");
+
+    // Ativar o popup
+    popup.classList.add("active");
+
+    // Fechar o popup ao clicar no botão
+    closeButton.addEventListener("click", function () {
+        popup.classList.remove("active");
+    });
+});
+
+
 document.getElementById("imcForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
